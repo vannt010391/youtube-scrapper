@@ -1,0 +1,12 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+<div class="user-form-group">
+   <form action="/download/" class="user-form" method="POST">
+      {% csrf_token %}
+      <br>{{data}}<br>
+      <div class="form-button"><button type="submit">Download</button></div>
+    </form>
+       
+</div>
+
+{% endblock %}

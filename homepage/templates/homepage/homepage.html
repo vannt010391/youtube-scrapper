@@ -1,0 +1,14 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+<div class="user-form-group">
+   <form action="/getdata/" class="user-form" method="post">
+      {% csrf_token %}
+      <!-- <div class="form-group"><input type="text" id="channel_id" name="channel_id" class="form-control" placeholder="Type your YouTube channel ID"></div> -->
+      <div class="form-group"><input type="text" id="channel_name" name="channel_name" class="form-control" placeholder="Type your YouTube channel name"></div>
+      <div class="form-button"><button type="submit">Submit</button></div>
+      <!-- <br>{{data}}<br> -->
+   </form>
+ 
+</div>
+
+{% endblock %}
